@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "idCliente": {
+      "type": "integer"
+    },
+    "detalle": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "subTotal": {
+      "type": "number"
+    },
+    "iva": {
+      "type": "number"
+    },
+    "total": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "idCliente",
+    "detalle",
+    "cantidad",
+    "subTotal",
+    "iva",
+    "total"
+  ]
+}

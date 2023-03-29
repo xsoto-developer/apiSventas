@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProjectTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProjectTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testClean.html">testClean</a> &gt; ProjectTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.149s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">verifyCRUDProject()</td>
+<td class="success">5.149s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://localhost:8080/ventas
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;total&quot;: 3131,
+    &quot;idCliente&quot;: 1,
+    &quot;iva&quot;: 0.13,
+    &quot;cantidad&quot;: 3000,
+    &quot;subTotal&quot;: 3001,
+    &quot;detalle&quot;: &quot;detallleFactoryCRUD&quot;
+}
+HTTP/1.1 201 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    &quot;id&quot;: 525,
+    &quot;idCliente&quot;: 1,
+    &quot;detalle&quot;: &quot;detallleFactoryCRUD&quot;,
+    &quot;cantidad&quot;: 3000,
+    &quot;subTotal&quot;: 3001.0,
+    &quot;iva&quot;: 0.13,
+    &quot;total&quot;: 3131.0
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/ventas
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;total&quot;: 3131,
+    &quot;idCliente&quot;: 1,
+    &quot;iva&quot;: 0.13,
+    &quot;cantidad&quot;: 3000,
+    &quot;subTotal&quot;: 3001,
+    &quot;detalle&quot;: &quot;detallleFactoryUPDATE&quot;
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    &quot;id&quot;: 526,
+    &quot;idCliente&quot;: 1,
+    &quot;detalle&quot;: &quot;detallleFactoryUPDATE&quot;,
+    &quot;cantidad&quot;: 3000,
+    &quot;subTotal&quot;: 3001.0,
+    &quot;iva&quot;: 0.13,
+    &quot;total&quot;: 3131.0
+}
+Request method:	GET
+Request URI:	http://localhost:8080/ventas/526
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    &quot;id&quot;: 526,
+    &quot;idCliente&quot;: 1,
+    &quot;detalle&quot;: &quot;detallleFactoryUPDATE&quot;,
+    &quot;cantidad&quot;: 3000,
+    &quot;subTotal&quot;: 3001.0,
+    &quot;iva&quot;: 0.13,
+    &quot;total&quot;: 3131.0
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/ventas/526
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+Content-Length: 0
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 29 mar. 2023 11:25:22</p>
+</div>
+</div>
+</body>
+</html>

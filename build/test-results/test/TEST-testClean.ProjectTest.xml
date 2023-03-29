@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testClean.ProjectTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-29T15:25:17" hostname="DESKTOP-0SUNJO7" time="5.149">
+  <properties/>
+  <testcase name="verifyCRUDProject()" classname="testClean.ProjectTest" time="5.149"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/ventas
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "total": 3131,
+    "idCliente": 1,
+    "iva": 0.13,
+    "cantidad": 3000,
+    "subTotal": 3001,
+    "detalle": "detallleFactoryCRUD"
+}
+HTTP/1.1 201 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 525,
+    "idCliente": 1,
+    "detalle": "detallleFactoryCRUD",
+    "cantidad": 3000,
+    "subTotal": 3001.0,
+    "iva": 0.13,
+    "total": 3131.0
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/ventas
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "total": 3131,
+    "idCliente": 1,
+    "iva": 0.13,
+    "cantidad": 3000,
+    "subTotal": 3001,
+    "detalle": "detallleFactoryUPDATE"
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 526,
+    "idCliente": 1,
+    "detalle": "detallleFactoryUPDATE",
+    "cantidad": 3000,
+    "subTotal": 3001.0,
+    "iva": 0.13,
+    "total": 3131.0
+}
+Request method:	GET
+Request URI:	http://localhost:8080/ventas/526
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 526,
+    "idCliente": 1,
+    "detalle": "detallleFactoryUPDATE",
+    "cantidad": 3000,
+    "subTotal": 3001.0,
+    "iva": 0.13,
+    "total": 3131.0
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/ventas/526
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Length: 0
+Date: Wed, 29 Mar 2023 15:25:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

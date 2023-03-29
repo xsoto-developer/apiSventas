@@ -1,0 +1,8 @@
+{
+  "idCliente": 1,
+  "detalle": "detallleFile",
+  "cantidad": 2000,
+  "subTotal": 2001.0,
+  "iva": 0.13,
+  "total": 2131.0
+}
